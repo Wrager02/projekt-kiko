@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2c2f33;
+}
+body p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.8em;
+}
+body h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 25em;
+}
+body h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+body .primaryText {
+  color: #ffa88e;
+}
+body .accentText {
+  color: #ffcb8e;
+}
+body .whiteText {
+  color: #ffffff;
+}
+body #navigation {
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  -webkit-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
+  -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
+  box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
+}
+body #navigation a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #2c2f33;
+  transition: all 275ms ease;
+}
+body #navigation a:hover {
+  color: #ffa88e;
+}
+body #navigation .logo {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+body #navigation #navigationContainer {
+  display: flex;
+}
+body #header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #idea {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffa88e;
+}
+body #idea #ideaTextContainer {
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  left: 10%;
+  top: 15%;
+  padding: 2%;
+  background-color: #ffffff;
+  width: 60%;
+  height: 70%;
+  border-radius: 3em;
+  padding-right: 20%;
+}
+body #idea #ideaImgContainer {
+  width: 40%;
+  height: 60%;
+  position: relative;
+  right: -50%;
+  top: -50%;
+}
+body #idea #ideaImgContainer img {
+  width: 100%;
+  height: 100%;
+}
+body #team {
+  height: 100vh;
+  width: 100%;
+}
+body #downloads {
+  background-color: #ffa88e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #downloads #downloadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 60%;
+}
+body #downloads #downloadContainer .downloadCard {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  border-radius: 3em;
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+}
+body #downloads #downloadContainer .downloadCard i {
+  font-size: 10em;
+  color: #2c2f33;
+  transition: color 0.25s ease;
+}
+body #downloads #downloadContainer .downloadCard h3 {
+  color: #2c2f33;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+body #downloads #downloadContainer .downloadCard:hover i {
+  color: #ffcb8e;
+}
+body #downloads #downloadContainer .downloadCard:hover h3 {
+  color: #ffcb8e;
+}
+body #sponsors {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+}
+body #contact {
+  background-color: #ffa88e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #contact #contactContainer {
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  background-color: #ffffff;
+  border-radius: 60px;
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #contact #contactContainer #submit {
+  height: 3em;
+  width: 80%;
+  background-color: #ffcb8e;
+  border-radius: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #ffffff;
+  outline: 0;
+  border: none;
+  transition: background-color 0.25s ease;
+}
+body #contact #contactContainer #submit:hover {
+  background-color: #ffa88e;
+}
+body #contact #contactContainer #inputGroup {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body #contact #contactContainer #inputGroup textarea {
+  height: 15em;
+  width: 80%;
+  background-color: #e3e3e3;
+  border-radius: 1.5em;
+  padding-top: 0.9em;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2c2f33;
+  border: none;
+  outline: 0;
+  resize: none;
+}
+body #contact #contactContainer #inputGroup .inputContainer {
+  height: 3em;
+  width: 80%;
+  background-color: #e3e3e3;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body #contact #contactContainer #inputGroup .inputContainer i {
+  color: #2c2f33;
+  font-size: 1.5em;
+  transition: color 0.25s ease;
+}
+body #contact #contactContainer #inputGroup .inputContainer input {
+  width: 85%;
+  display: flex;
+  background-color: #e3e3e3;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2c2f33;
+}
+body #contact #contactContainer #inputGroup .inputContainer input:focus {
+  outline: 0;
+}
+body #contact #contactContainer #inputGroup .inputContainer:focus-within i {
+  color: #ffcb8e;
+}
+body #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2f33;
+  color: #ffffff;
+  height: 10vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
