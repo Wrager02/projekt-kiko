@@ -191,6 +191,8 @@ body {
       }
 
       .downloadCard:hover {
+        cursor: pointer;
+
         i {
           color: $accent;
         }
@@ -245,6 +247,12 @@ body {
       }
 
       #submit:hover {
+        cursor: pointer;
+        background-color: $primary;
+      }
+
+      #submit:focus {
+        cursor: pointer;
         background-color: $primary;
       }
 

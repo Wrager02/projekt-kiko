@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43edb6bd-5d36-4b25-9efb-c7265ff658f9" name="Default Changelist" comment="" />
+    <list default="true" id="43edb6bd-5d36-4b25-9efb-c7265ff658f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../projekt-kiko/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projekt-kiko/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projekt-kiko/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projekt-kiko/app/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../projekt-kiko/app/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projekt-kiko/app/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../projekt-kiko/app/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projekt-kiko/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../projekt-kiko/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projekt-kiko/app/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../projekt-kiko/app/index.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../projekt-kiko" />
+  </component>
   <component name="ProjectId" id="1hp0Fat9wbb7CLCmLFw60PaawDF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projekt-kiko/app/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projekt-kiko" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -45,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600692623837</updated>
-      <workItem from="1600692626651" duration="14912000" />
+      <workItem from="1600692626651" duration="16680000" />
     </task>
     <servers />
   </component>
@@ -65,10 +76,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="915" y="292" key="EditFileWatcherDialog/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600693293864" />
-    <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1600693089832">
+    <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1600708569352">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1060" y="274" key="FileChooserDialogImpl/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600693089832" />
+    <state x="1060" y="274" key="FileChooserDialogImpl/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600708569352" />
+    <state x="1148" y="414" key="Github.ShareDialog" timestamp="1600708543375">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1148" y="414" key="Github.ShareDialog/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600708543375" />
     <state x="781" y="162" key="SettingsEditor" timestamp="1600693296205">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
