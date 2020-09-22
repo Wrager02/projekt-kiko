@@ -369,6 +369,9 @@ body #impressum #impressumContainer {
   background-color: #ffffff;
   padding: 7vh;
   border-radius: 3em;
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
 }
 body #impressum #impressumContainer .impressumInformationContainer {
   width: 25%;
