@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];
     $subject2 = "Deine Nachricht";
     $message = $_POST['message'];
-    $message2 = "Dies ist eine Kopie Ihrer Nachricht an KIKO:\n\n\n" . $_POST['message'];
+    $message2 = "Dies ist eine Kopie deiner Nachricht an KIKO:\n\n\n" . $_POST['message'];
 
     $headers = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $from . "\r\n";
     $headers2 = 'From: KIKO Kontakt <contact@kikoapp.at>' . "\r\n" . 'Reply-To: contact@kikoapp.at' . "\r\n";
