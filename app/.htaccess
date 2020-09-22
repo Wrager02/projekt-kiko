@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule    ^impressum?$    html/impressum.html    [NC,L]    # Handle requests for "pet-care"
