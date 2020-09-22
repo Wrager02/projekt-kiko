@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Quicksand:wght@700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,7 +19,7 @@ body {
 body p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.8em;
 }
 body h1 {
@@ -60,7 +60,7 @@ body #navigation {
 body #navigation a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
@@ -97,7 +97,7 @@ body #idea #ideaTextContainer {
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   left: 10%;
   top: 15%;
@@ -107,6 +107,10 @@ body #idea #ideaTextContainer {
   height: 70%;
   border-radius: 3em;
   padding-right: 20%;
+}
+body #idea #ideaTextContainer #ideaHeader {
+  display: flex;
+  justify-self: flex-start;
 }
 body #idea #ideaImgContainer {
   width: 40%;
