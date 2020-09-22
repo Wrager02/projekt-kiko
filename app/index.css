@@ -185,6 +185,26 @@ body #sponsors {
   background-color: #ffffff;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #sponsors #sponsorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+}
+body #sponsors #sponsorContainer .sponsorSvgContainer {
+  width: 25%;
+  height: auto;
+}
+body #sponsors #sponsorContainer .sponsorSvgContainer .sponsorSvg {
+  width: 100%;
+  height: 100%;
 }
 body #contact {
   background-color: #ffa88e;
