@@ -418,22 +418,14 @@ body #footer {
 body #footer p {
   font-size: 1.2em;
 }
-body #footer #footer_right {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 body #footer #footer_right a {
   color: #ffffff;
-  height: 10vh;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 500;
   transition: color 0.25s ease;
+  padding-left: 1em;
 }
 body #footer #footer_right a:hover, body #footer #footer_right a:focus {
   color: #ffcb8e;
