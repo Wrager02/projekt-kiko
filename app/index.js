@@ -1,11 +1,11 @@
-document.getElementById("ansuchen").addEventListener("click", function() {
-    window.location.assign('any url or file path');
+document.getElementById("ansuchen").addEventListener("click", () => {
+    document.getElementById("ansuchenDownload").click();
 });
 
 document.getElementById("antrag").addEventListener("click", () => {
-    window.location.assign('any url or file path');
+    document.getElementById("antragDownload").click();
 });
 
 document.getElementById("buch").addEventListener("click", () => {
-    window.location.assign('any url or file path');
+    document.getElementById("buchDownload").click();
 });

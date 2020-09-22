@@ -161,24 +161,25 @@ body #downloads #downloadContainer .downloadCard i {
   color: #2c2f33;
   transition: color 0.25s ease;
 }
-body #downloads #downloadContainer .downloadCard h3 {
+body #downloads #downloadContainer .downloadCard a {
   color: #2c2f33;
   font-size: 1.6em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   transition: color 0.25s ease;
+  text-decoration: none;
 }
-body #downloads #downloadContainer .downloadCard:hover {
+body #downloads #downloadContainer .downloadCard:hover, body #downloads #downloadContainer .downloadCard:focus-within {
   cursor: pointer;
   transform: scale(1.03);
   -webkit-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
   -moz-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
   box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
 }
-body #downloads #downloadContainer .downloadCard:hover i {
+body #downloads #downloadContainer .downloadCard:hover i, body #downloads #downloadContainer .downloadCard:focus-within i {
   color: #ffcb8e;
 }
-body #downloads #downloadContainer .downloadCard:hover h3 {
+body #downloads #downloadContainer .downloadCard:hover a, body #downloads #downloadContainer .downloadCard:focus-within a {
   color: #ffcb8e;
 }
 body #sponsors {
