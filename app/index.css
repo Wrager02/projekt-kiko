@@ -82,6 +82,7 @@ body #header {
   height: 100vh;
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
   align-items: center;
 }
 body #idea {
@@ -100,7 +101,7 @@ body #idea #ideaTextContainer {
   position: relative;
   left: 10%;
   top: 15%;
-  padding: 2%;
+  padding: 5vh;
   background-color: #ffffff;
   width: 60%;
   height: 70%;
@@ -135,8 +136,8 @@ body #downloads #downloadContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
-  height: 60%;
+  width: 70%;
+  height: 50%;
 }
 body #downloads #downloadContainer .downloadCard {
   background-color: #ffffff;
@@ -144,26 +145,31 @@ body #downloads #downloadContainer .downloadCard {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 20vw;
+  width: 25%;
   border-radius: 3em;
   -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  transition: all 0.25s ease;
 }
 body #downloads #downloadContainer .downloadCard i {
-  font-size: 10em;
+  font-size: 8em;
   color: #2c2f33;
   transition: color 0.25s ease;
 }
 body #downloads #downloadContainer .downloadCard h3 {
   color: #2c2f33;
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   transition: color 0.25s ease;
 }
 body #downloads #downloadContainer .downloadCard:hover {
   cursor: pointer;
+  transform: scale(1.03);
+  -webkit-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
+  -moz-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
+  box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
 }
 body #downloads #downloadContainer .downloadCard:hover i {
   color: #ffcb8e;
@@ -190,17 +196,18 @@ body #contact #contactContainer {
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   background-color: #ffffff;
-  border-radius: 60px;
-  width: 30%;
+  border-radius: 3em;
+  width: 60vh;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 5vh;
 }
 body #contact #contactContainer #submit {
   height: 3em;
-  width: 80%;
+  width: 100%;
   background-color: #ffcb8e;
   border-radius: 3em;
   font-family: "Montserrat", sans-serif;
@@ -220,7 +227,7 @@ body #contact #contactContainer #submit:focus {
   background-color: #ffa88e;
 }
 body #contact #contactContainer #inputGroup {
-  height: 65%;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -229,7 +236,7 @@ body #contact #contactContainer #inputGroup {
 }
 body #contact #contactContainer #inputGroup textarea {
   height: 15em;
-  width: 80%;
+  width: 100%;
   background-color: #e3e3e3;
   border-radius: 1.5em;
   padding-top: 0.9em;
@@ -245,15 +252,13 @@ body #contact #contactContainer #inputGroup textarea {
 }
 body #contact #contactContainer #inputGroup .inputContainer {
   height: 3em;
-  width: 80%;
+  width: 100%;
   background-color: #e3e3e3;
   border-radius: 1.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  justify-content: space-evenly;
 }
 body #contact #contactContainer #inputGroup .inputContainer i {
   color: #2c2f33;
@@ -261,8 +266,7 @@ body #contact #contactContainer #inputGroup .inputContainer i {
   transition: color 0.25s ease;
 }
 body #contact #contactContainer #inputGroup .inputContainer input {
-  width: 85%;
-  display: flex;
+  width: 80%;
   background-color: #e3e3e3;
   border: none;
   font-family: "Montserrat", sans-serif;
