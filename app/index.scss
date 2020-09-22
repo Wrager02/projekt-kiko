@@ -34,6 +34,12 @@ body {
   h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    font-size: 15em;
+  }
+
+  #headline {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     font-size: 25em;
   }
 
@@ -67,9 +73,9 @@ body {
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    -webkit-box-shadow: 5px 5px 40px 0px rgba(44,47,51,0.1);
-    -moz-box-shadow: 5px 5px 40px 0px rgba(44,47,51,0.1);
-    box-shadow: 5px 5px 40px 0px rgba(44,47,51,0.1);
+    -webkit-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
+    -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
+    box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
 
     a {
       text-decoration: none;
@@ -112,9 +118,9 @@ body {
     background-color: $primary;
 
     #ideaTextContainer {
-      -webkit-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-      -moz-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-      box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
+      -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -224,9 +230,9 @@ body {
         justify-content: space-evenly;
         width: 25%;
         border-radius: 3em;
-        -webkit-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-        -moz-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-        box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
+        -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+        -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+        box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
         transition: all 0.25s ease;
 
         i {
@@ -245,12 +251,12 @@ body {
         }
       }
 
-      .downloadCard:hover,.downloadCard:focus-within {
+      .downloadCard:hover, .downloadCard:focus-within {
         cursor: pointer;
         transform: scale(1.03);
-        -webkit-box-shadow: 6px 6px 45px -11px rgba(44,47,51,0.8);
-        -moz-box-shadow: 6px 6px 45px -11px rgba(44,47,51,0.8);
-        box-shadow: 6px 6px 45px -11px rgba(44,47,51,0.8);
+        -webkit-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
+        -moz-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
+        box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
 
         i {
           color: $accent;
@@ -302,9 +308,9 @@ body {
     justify-content: space-evenly;
 
     #contactContainer {
-      -webkit-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-      -moz-box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
-      box-shadow: 5px 5px 40px -11px rgba(44,47,51,0.61);
+      -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
       background-color: $white;
       border-radius: 3em;
       width: 60vh;
@@ -404,13 +410,103 @@ body {
     }
   }
 
+  #impressum {
+    background-color: $primary;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #impressumContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 50%;
+      height: 60%;
+      background-color: $white;
+      padding: 7vh;
+      border-radius: 3em;
+
+      .impressumInformationContainer {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        i {
+          color: $accent;
+          font-size: 10em;
+        }
+
+        div {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h3 {
+            color: $primary;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+          }
+
+          div {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+          }
+        }
+
+      }
+    }
+  }
+
   #footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: $dark;
     color: $white;
     height: 10vh;
     width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    p {
+      font-size: 1.2em;
+    }
+
+    #footer_right {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        color: $white;
+        height: 10vh;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        transition: color 0.25s ease;
+      }
+
+      a:hover, a:focus {
+        color: $accent;
+      }
+    }
   }
 }
