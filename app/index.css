@@ -414,6 +414,11 @@ body #privacy {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 10vh;
+}
+body #privacy h2 {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 body #privacy #privacyContainer {
   width: 70%;
