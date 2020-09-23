@@ -474,6 +474,52 @@ body {
     }
   }
 
+  #privacy {
+    background-color: $primary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #privacyContainer {
+      width: 70%;
+      background-color: $white;
+      padding: 5vh;
+      padding-bottom: 0;
+      border-radius: 3em;
+      -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+      box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+
+      section {
+        margin-bottom: 5vh;
+
+        p {
+          line-height: 1.5em;
+          font-size: 1em;
+          margin-bottom: 0.5vh;
+        }
+
+        li {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 1em;
+          margin-left: 2em;
+          line-height: 1.5em;
+        }
+
+        h3 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          color: $accent;
+          font-size: 2em;
+          margin-bottom: 2.5vh;
+        }
+      }
+    }
+  }
+
   #footer {
     display: flex;
     justify-content: space-between;
