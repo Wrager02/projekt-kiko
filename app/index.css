@@ -19,7 +19,7 @@ body {
 body p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  line-height: 2em;
+  line-height: 2.5em;
   font-size: 2em;
 }
 @media (min-width: 992px) {
@@ -46,9 +46,15 @@ body a:hover, body a:focus {
 body li {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  line-height: 1.7em;
-  font-size: 1.2em;
-  margin-left: 2em;
+  line-height: 2.5em;
+  font-size: 2em;
+  margin-left: 3em;
+}
+@media (min-width: 992px) {
+  body li {
+    line-height: 1.7em;
+    font-size: 1.2em;
+  }
 }
 body h1 {
   font-family: "Quicksand", sans-serif;
@@ -67,12 +73,12 @@ body h2 {
 }
 body h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-size: 4em;
   font-weight: 700;
 }
 @media (min-width: 992px) {
   body h3 {
-    font-size: 4em;
+    font-size: 2em;
   }
 }
 body h4 {
@@ -587,31 +593,69 @@ body #privacy {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10vh;
+  padding: 5%;
+}
+@media (min-width: 992px) {
+  body #privacy {
+    padding: 10vh;
+  }
 }
 body #privacy h2 {
   margin-top: 5vh;
   margin-bottom: 10vh;
 }
 body #privacy #privacyContainer {
-  width: 70%;
+  width: 100%;
   background-color: #ffffff;
-  padding: 5vh;
+  padding: 5%;
   padding-bottom: 0;
   border-radius: 3em;
   -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
 }
+@media (min-width: 992px) {
+  body #privacy #privacyContainer {
+    width: 70%;
+    padding: 5vh;
+  }
+}
 body #privacy #privacyContainer section {
-  margin-bottom: 5vh;
+  margin-bottom: 5%;
+}
+@media (min-width: 992px) {
+  body #privacy #privacyContainer section {
+    margin-bottom: 5vh;
+  }
+}
+body #privacy #privacyContainer section a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+@media (min-width: 992px) {
+  body #privacy #privacyContainer section a {
+    font-size: 1.2em;
+  }
 }
 body #privacy #privacyContainer section p {
-  margin-bottom: 0.5vh;
+  margin-bottom: 1em;
+}
+@media (min-width: 992px) {
+  body #privacy #privacyContainer section p {
+    margin-bottom: 0.5vh;
+  }
 }
 body #privacy #privacyContainer section h3 {
   color: #ffcb8e;
-  margin-bottom: 2.5vh;
+  margin-bottom: 2.5%;
+}
+@media (min-width: 992px) {
+  body #privacy #privacyContainer section h3 {
+    margin-bottom: 2.5vh;
+  }
 }
 body #footer {
   display: flex;
