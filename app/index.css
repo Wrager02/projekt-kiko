@@ -333,8 +333,15 @@ body #navigationContainer {
   transition: color 0.25s ease;
 }
 #downloads #downloadContainer .downloadCard a {
-  font-size: 1.6em;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 2em;
+}
+@media (min-width: 992px) {
+  #downloads #downloadContainer .downloadCard a {
+    line-height: 1.7em;
+    font-size: 1.2em;
+  }
 }
 #downloads #downloadContainer .downloadCard:hover, #downloads #downloadContainer .downloadCard:focus-within {
   cursor: pointer;
