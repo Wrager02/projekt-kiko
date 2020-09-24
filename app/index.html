@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Projekt KIKO</title>
     <link rel="stylesheet" href="index.css">
+    <link href="css/hamburgers.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bcad70f915.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,15 +17,24 @@
         <a class="darkText" href="#sponsors">Partner</a>
         <a class="darkText" href="#contact">Kontakt</a>
     </div>
+    <div id="burgerMenu">
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
 </div>
 <div id="header">
     <h1><span class="primaryText">KI</span><span class="accentText">KO</span></h1>
 </div>
 <div id="idea">
+    <h2 id="ideaMobileHeader" class="whiteText">Die Idee</h2>
     <div id="ideaTextContainer">
         <h2 id="ideaHeader" class="accentText">Die Idee</h2>
         <p>
-            Als wir ein Thema für unsere Diplomarbeit suchten, waren alle Teammitglieder derselben Meinung:<br>"Wir wollen
+            Als wir ein Thema für unsere Diplomarbeit suchten, waren alle Teammitglieder derselben Meinung:<br>"Wir
+            wollen
             etwas erschaffen, das einen Nutzen für die Menschen hat".<br>Nach einem Ideen-Workshop hatten wir unser
             Projekt: eine Applikation, welche die Kommunikation und Organisation einer Kindergarten-Gruppe vereinfachen
             soll. Mit dem Ziel auch älteren Usern einen logischen und simplen Umgang zu ermöglichen.
@@ -37,36 +47,40 @@
 <div id="team">
     <h2 class="primaryText">Unser Team</h2>
     <div id="teamContainer">
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/hirsie.svg">
-            <div class="personText">
-                <h4 class="accentText">Matthias</h4>
-                <h4 class="accentText">Hirmann</h4>
-                <p>Scrum Master</p>
+        <div class="personContainerRow">
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/hirsie.svg">
+                <div class="personText">
+                    <h4 class="accentText">Matthias</h4>
+                    <h4 class="accentText">Hirmann</h4>
+                    <p>Scrum Master</p>
+                </div>
+            </div>
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/clemens.svg">
+                <div class="personText">
+                    <h4 class="accentText">Clemens</h4>
+                    <h4 class="accentText">Jurkowitsch</h4>
+                    <p>Product Owner</p>
+                </div>
             </div>
         </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/clemens.svg">
-            <div class="personText">
-                <h4 class="accentText">Clemens</h4>
-                <h4 class="accentText">Jurkowitsch</h4>
-                <p>Product Owner</p>
+        <div class="personContainerRow">
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/jakob.svg">
+                <div class="personText">
+                    <h4 class="accentText">Jakob</h4>
+                    <h4 class="accentText">Fischer</h4>
+                    <p>Entwickler</p>
+                </div>
             </div>
-        </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/jakob.svg">
-            <div class="personText">
-                <h4 class="accentText">Jakob</h4>
-                <h4 class="accentText">Fischer</h4>
-                <p>Entwickler</p>
-            </div>
-        </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/alex.svg">
-            <div class="personText">
-                <h4 class="accentText">Alexander</h4>
-                <h4 class="accentText">Reckendorfer</h4>
-                <p>Entwickler</p>
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/alex.svg">
+                <div class="personText">
+                    <h4 class="accentText">Alexander</h4>
+                    <h4 class="accentText">Reckendorfer</h4>
+                    <p>Entwickler</p>
+                </div>
             </div>
         </div>
     </div>
@@ -91,6 +105,7 @@
 <div id="sponsors">
     <h2 class="primaryText">Unsere Partner</h2>
     <div id="sponsorContainer">
+        <div class="sponsorSvgContainer"><img class="sponsorSvg" class src="images/easyname_logo_default.svg"></div>
         <div class="sponsorSvgContainer"><img class="sponsorSvg" class src="images/easyname_logo_default.svg"></div>
     </div>
 </div>
