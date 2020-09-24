@@ -123,21 +123,38 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     -webkit-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
     -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
     box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
 
-    a {
-      padding-left: 1em;
-      padding-right: 1em;
+    #burgerMenu {
+      @media(min-width: 992px) {
+        display: none;
+      }
+    }
+
+    #linkContainer {
+      display: none;
+
+      @media(min-width: 992px) {
+        display: flex;
+
+        a {
+          padding-left: 1.5em;
+        }
+      }
     }
 
     .logo {
       font-family: 'Quicksand', sans-serif;
       font-weight: 700;
-      font-size: 2.5em;
+      font-size: 4em;
+
+      @media(min-width: 992px) {
+        font-size: 2.5em;
+      }
     }
 
     #navigationContainer {
@@ -481,7 +498,9 @@ body {
         }
 
         textarea {
-          height: 26em;
+          flex-grow: 1;
+
+          //height: 26em;
           width: 100%;
           background-color: $light-grey;
           border-radius: 1.5em;
@@ -511,10 +530,10 @@ body {
           flex-direction: row;
           align-items: center;
           justify-content: space-evenly;
+          margin-bottom: 2.5em;
 
           @media(min-width: 992px) {
             height: 3em;
-            font-size: 1.2em;
           }
 
           i {
