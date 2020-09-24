@@ -30,15 +30,7 @@ body p {
 }
 body a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2em;
-  font-weight: 500;
   transition: color 0.25s ease;
-}
-@media (min-width: 992px) {
-  body a {
-    font-size: 1.2em;
-  }
 }
 body a:hover, body a:focus {
   color: #ffcb8e;
@@ -73,7 +65,7 @@ body h2 {
 }
 body h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 700;
 }
 @media (min-width: 992px) {
@@ -120,11 +112,6 @@ body #navigation {
   -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
   box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
 }
-@media (min-width: 992px) {
-  body #navigation #burgerMenu {
-    display: none;
-  }
-}
 body #navigation #linkContainer {
   display: none;
 }
@@ -132,31 +119,36 @@ body #navigation #linkContainer {
   body #navigation #linkContainer {
     display: flex;
   }
-  body #navigation #linkContainer a {
-    padding-left: 1.5em;
-  }
 }
-body #navigation .logo {
+body #navigation #linkContainer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-left: 1.5em;
+}
+body .logo {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 4em;
 }
 @media (min-width: 992px) {
-  body #navigation .logo {
+  body .logo {
     font-size: 2.5em;
   }
 }
-body #navigation #navigationContainer {
+body #navigationContainer {
   display: flex;
 }
-body #header {
+
+#header {
   height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
   align-items: center;
 }
-body #idea {
+
+#idea {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -167,17 +159,17 @@ body #idea {
   justify-content: space-evenly;
 }
 @media (min-width: 992px) {
-  body #idea {
+  #idea {
     position: relative;
     display: block;
   }
 }
 @media (min-width: 992px) {
-  body #idea #ideaMobileHeader {
+  #idea #ideaMobileHeader {
     display: none;
   }
 }
-body #idea #ideaTextContainer {
+#idea #ideaTextContainer {
   -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
@@ -191,7 +183,7 @@ body #idea #ideaTextContainer {
   padding: 5%;
 }
 @media (min-width: 992px) {
-  body #idea #ideaTextContainer {
+  #idea #ideaTextContainer {
     position: relative;
     left: 10%;
     top: 15%;
@@ -201,16 +193,16 @@ body #idea #ideaTextContainer {
     padding-right: 20%;
   }
 }
-body #idea #ideaTextContainer #ideaHeader {
+#idea #ideaTextContainer #ideaHeader {
   display: none;
   justify-self: flex-start;
 }
 @media (min-width: 992px) {
-  body #idea #ideaTextContainer #ideaHeader {
+  #idea #ideaTextContainer #ideaHeader {
     display: flex;
   }
 }
-body #idea #ideaImgContainer {
+#idea #ideaImgContainer {
   display: none;
   width: 40%;
   height: 60%;
@@ -219,15 +211,16 @@ body #idea #ideaImgContainer {
   top: -50%;
 }
 @media (min-width: 992px) {
-  body #idea #ideaImgContainer {
+  #idea #ideaImgContainer {
     display: block;
   }
 }
-body #idea #ideaImgContainer img {
+#idea #ideaImgContainer img {
   width: 100%;
   height: 100%;
 }
-body #team {
+
+#team {
   background-color: #ffffff;
   height: 100vh;
   width: 100%;
@@ -236,7 +229,7 @@ body #team {
   align-items: center;
   justify-content: space-evenly;
 }
-body #team #teamContainer {
+#team #teamContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,14 +237,14 @@ body #team #teamContainer {
   height: 70%;
 }
 @media (min-width: 992px) {
-  body #team #teamContainer {
+  #team #teamContainer {
     width: 70%;
     height: 50%;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-body #team #teamContainer .personContainerRow {
+#team #teamContainer .personContainerRow {
   width: 100%;
   height: 40%;
   display: flex;
@@ -260,12 +253,12 @@ body #team #teamContainer .personContainerRow {
   justify-content: space-around;
 }
 @media (min-width: 992px) {
-  body #team #teamContainer .personContainerRow {
+  #team #teamContainer .personContainerRow {
     width: 50%;
     height: 100%;
   }
 }
-body #team #teamContainer .personContainerRow .personContainer {
+#team #teamContainer .personContainerRow .personContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,22 +267,23 @@ body #team #teamContainer .personContainerRow .personContainer {
   height: 100%;
 }
 @media (min-width: 992px) {
-  body #team #teamContainer .personContainerRow .personContainer {
+  #team #teamContainer .personContainerRow .personContainer {
     width: 36%;
   }
 }
-body #team #teamContainer .personContainerRow .personContainer .personSvg {
+#team #teamContainer .personContainerRow .personContainer .personSvg {
   width: 100%;
   height: auto;
 }
-body #team #teamContainer .personContainerRow .personContainer .personText {
+#team #teamContainer .personContainerRow .personContainer .personText {
   height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body #downloads {
+
+#downloads {
   background-color: #ffa88e;
   height: 100vh;
   width: 100%;
@@ -298,7 +292,7 @@ body #downloads {
   align-items: center;
   justify-content: space-evenly;
 }
-body #downloads #downloadContainer {
+#downloads #downloadContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -306,13 +300,13 @@ body #downloads #downloadContainer {
   height: 70%;
 }
 @media (min-width: 992px) {
-  body #downloads #downloadContainer {
+  #downloads #downloadContainer {
     flex-direction: row;
     width: 70%;
     height: 50%;
   }
 }
-body #downloads #downloadContainer .downloadCard {
+#downloads #downloadContainer .downloadCard {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -327,39 +321,40 @@ body #downloads #downloadContainer .downloadCard {
   transition: all 0.25s ease;
 }
 @media (min-width: 992px) {
-  body #downloads #downloadContainer .downloadCard {
+  #downloads #downloadContainer .downloadCard {
     height: 100%;
     width: 25%;
     flex-direction: column;
   }
 }
-body #downloads #downloadContainer .downloadCard i {
+#downloads #downloadContainer .downloadCard i {
   font-size: 8em;
   color: #2c2f33;
   transition: color 0.25s ease;
 }
-body #downloads #downloadContainer .downloadCard a {
+#downloads #downloadContainer .downloadCard a {
   font-size: 1.6em;
   font-weight: 700;
 }
-body #downloads #downloadContainer .downloadCard:hover, body #downloads #downloadContainer .downloadCard:focus-within {
+#downloads #downloadContainer .downloadCard:hover, #downloads #downloadContainer .downloadCard:focus-within {
   cursor: pointer;
 }
 @media (min-width: 992px) {
-  body #downloads #downloadContainer .downloadCard:hover, body #downloads #downloadContainer .downloadCard:focus-within {
+  #downloads #downloadContainer .downloadCard:hover, #downloads #downloadContainer .downloadCard:focus-within {
     transform: scale(1.03);
     -webkit-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
     -moz-box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
     box-shadow: 6px 6px 45px -11px rgba(44, 47, 51, 0.8);
   }
 }
-body #downloads #downloadContainer .downloadCard:hover i, body #downloads #downloadContainer .downloadCard:focus-within i {
+#downloads #downloadContainer .downloadCard:hover i, #downloads #downloadContainer .downloadCard:focus-within i {
   color: #ffcb8e;
 }
-body #downloads #downloadContainer .downloadCard:hover a, body #downloads #downloadContainer .downloadCard:focus-within a {
+#downloads #downloadContainer .downloadCard:hover a, #downloads #downloadContainer .downloadCard:focus-within a {
   color: #ffcb8e;
 }
-body #sponsors {
+
+#sponsors {
   background-color: #ffffff;
   height: 100vh;
   width: 100%;
@@ -368,7 +363,7 @@ body #sponsors {
   align-items: center;
   justify-content: space-evenly;
 }
-body #sponsors #sponsorContainer {
+#sponsors #sponsorContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -377,27 +372,28 @@ body #sponsors #sponsorContainer {
   height: 70%;
 }
 @media (min-width: 992px) {
-  body #sponsors #sponsorContainer {
+  #sponsors #sponsorContainer {
     justify-content: space-between;
     flex-direction: row;
     width: 70%;
     height: 50%;
   }
 }
-body #sponsors #sponsorContainer .sponsorSvgContainer {
+#sponsors #sponsorContainer .sponsorSvgContainer {
   width: 80%;
   height: auto;
 }
 @media (min-width: 992px) {
-  body #sponsors #sponsorContainer .sponsorSvgContainer {
+  #sponsors #sponsorContainer .sponsorSvgContainer {
     width: 40%;
   }
 }
-body #sponsors #sponsorContainer .sponsorSvgContainer .sponsorSvg {
+#sponsors #sponsorContainer .sponsorSvgContainer .sponsorSvg {
   width: 100%;
   height: 100%;
 }
-body #contact {
+
+#contact {
   background-color: #ffa88e;
   height: 100vh;
   width: 100%;
@@ -406,7 +402,7 @@ body #contact {
   align-items: center;
   justify-content: space-evenly;
 }
-body #contact #contactContainer {
+#contact #contactContainer {
   -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
@@ -421,13 +417,13 @@ body #contact #contactContainer {
   padding: 5%;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer {
+  #contact #contactContainer {
     width: 60vh;
     height: 80vh;
     padding: 5vh;
   }
 }
-body #contact #contactContainer #submit {
+#contact #contactContainer #submit {
   height: 3.5em;
   width: 100%;
   background-color: #ffcb8e;
@@ -441,20 +437,20 @@ body #contact #contactContainer #submit {
   transition: background-color 0.25s ease;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #submit {
+  #contact #contactContainer #submit {
     height: 3em;
     font-size: 1.2em;
   }
 }
-body #contact #contactContainer #submit:hover {
+#contact #contactContainer #submit:hover {
   cursor: pointer;
   background-color: #ffa88e;
 }
-body #contact #contactContainer #submit:focus {
+#contact #contactContainer #submit:focus {
   cursor: pointer;
   background-color: #ffa88e;
 }
-body #contact #contactContainer #inputGroup {
+#contact #contactContainer #inputGroup {
   height: 80%;
   width: 100%;
   display: flex;
@@ -463,11 +459,11 @@ body #contact #contactContainer #inputGroup {
   justify-content: space-between;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #inputGroup {
+  #contact #contactContainer #inputGroup {
     height: 50vh;
   }
 }
-body #contact #contactContainer #inputGroup textarea {
+#contact #contactContainer #inputGroup textarea {
   flex-grow: 1;
   width: 100%;
   background-color: #e3e3e3;
@@ -484,12 +480,12 @@ body #contact #contactContainer #inputGroup textarea {
   resize: none;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #inputGroup textarea {
+  #contact #contactContainer #inputGroup textarea {
     font-size: 1.2em;
     height: 15em;
   }
 }
-body #contact #contactContainer #inputGroup .inputContainer {
+#contact #contactContainer #inputGroup .inputContainer {
   height: 5em;
   width: 100%;
   background-color: #e3e3e3;
@@ -501,21 +497,21 @@ body #contact #contactContainer #inputGroup .inputContainer {
   margin-bottom: 2.5em;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #inputGroup .inputContainer {
+  #contact #contactContainer #inputGroup .inputContainer {
     height: 3em;
   }
 }
-body #contact #contactContainer #inputGroup .inputContainer i {
+#contact #contactContainer #inputGroup .inputContainer i {
   color: #2c2f33;
   font-size: 2.5em;
   transition: color 0.25s ease;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #inputGroup .inputContainer i {
+  #contact #contactContainer #inputGroup .inputContainer i {
     font-size: 1.5em;
   }
 }
-body #contact #contactContainer #inputGroup .inputContainer input {
+#contact #contactContainer #inputGroup .inputContainer input {
   height: 100%;
   width: 80%;
   background-color: #e3e3e3;
@@ -526,17 +522,18 @@ body #contact #contactContainer #inputGroup .inputContainer input {
   color: #2c2f33;
 }
 @media (min-width: 992px) {
-  body #contact #contactContainer #inputGroup .inputContainer input {
+  #contact #contactContainer #inputGroup .inputContainer input {
     font-size: 1.2em;
   }
 }
-body #contact #contactContainer #inputGroup .inputContainer input:focus {
+#contact #contactContainer #inputGroup .inputContainer input:focus {
   outline: 0;
 }
-body #contact #contactContainer #inputGroup .inputContainer:focus-within i {
+#contact #contactContainer #inputGroup .inputContainer:focus-within i {
   color: #ffcb8e;
 }
-body #impressum {
+
+#impressum {
   background-color: #ffa88e;
   height: 100vh;
   width: 100%;
@@ -545,7 +542,7 @@ body #impressum {
   align-items: center;
   justify-content: space-evenly;
 }
-body #impressum #impressumContainer {
+#impressum #impressumContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -558,7 +555,7 @@ body #impressum #impressumContainer {
   -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
 }
-body #impressum #impressumContainer .impressumInformationContainer {
+#impressum #impressumContainer .impressumInformationContainer {
   width: 25%;
   height: 100%;
   display: flex;
@@ -566,11 +563,11 @@ body #impressum #impressumContainer .impressumInformationContainer {
   justify-content: space-around;
   align-items: center;
 }
-body #impressum #impressumContainer .impressumInformationContainer i {
+#impressum #impressumContainer .impressumInformationContainer i {
   color: #ffcb8e;
   font-size: 10em;
 }
-body #impressum #impressumContainer .impressumInformationContainer div {
+#impressum #impressumContainer .impressumInformationContainer div {
   height: 50%;
   width: 100%;
   display: flex;
@@ -578,7 +575,7 @@ body #impressum #impressumContainer .impressumInformationContainer div {
   align-items: center;
   justify-content: center;
 }
-body #impressum #impressumContainer .impressumInformationContainer div div {
+#impressum #impressumContainer .impressumInformationContainer div div {
   height: 40%;
   width: 100%;
   display: flex;
@@ -586,7 +583,8 @@ body #impressum #impressumContainer .impressumInformationContainer div div {
   align-items: center;
   justify-content: flex-start;
 }
-body #privacy {
+
+#privacy {
   background-color: #ffa88e;
   width: 100%;
   display: flex;
@@ -596,15 +594,21 @@ body #privacy {
   padding: 5%;
 }
 @media (min-width: 992px) {
-  body #privacy {
+  #privacy {
     padding: 10vh;
   }
 }
-body #privacy h2 {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+#privacy h2 {
+  margin-top: calc(7vh + 5%);
+  margin-bottom: 10%;
 }
-body #privacy #privacyContainer {
+@media (min-width: 992px) {
+  #privacy h2 {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+}
+#privacy #privacyContainer {
   width: 100%;
   background-color: #ffffff;
   padding: 5%;
@@ -615,49 +619,45 @@ body #privacy #privacyContainer {
   box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
 }
 @media (min-width: 992px) {
-  body #privacy #privacyContainer {
+  #privacy #privacyContainer {
     width: 70%;
     padding: 5vh;
   }
 }
-body #privacy #privacyContainer section {
+#privacy #privacyContainer section {
   margin-bottom: 5%;
 }
 @media (min-width: 992px) {
-  body #privacy #privacyContainer section {
+  #privacy #privacyContainer section {
     margin-bottom: 5vh;
   }
 }
-body #privacy #privacyContainer section a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  font-weight: 500;
-  transition: color 0.25s ease;
-}
-@media (min-width: 992px) {
-  body #privacy #privacyContainer section a {
-    font-size: 1.2em;
-  }
-}
-body #privacy #privacyContainer section p {
+#privacy #privacyContainer section p {
   margin-bottom: 1em;
 }
-@media (min-width: 992px) {
-  body #privacy #privacyContainer section p {
-    margin-bottom: 0.5vh;
+@media (max-width: 991px) {
+  #privacy #privacyContainer section p {
+    font-size: 1em;
+    line-height: 3em;
   }
 }
-body #privacy #privacyContainer section h3 {
+@media (max-width: 991px) {
+  #privacy #privacyContainer section li {
+    font-size: 1em;
+    line-height: 3em;
+  }
+}
+#privacy #privacyContainer section h3 {
   color: #ffcb8e;
   margin-bottom: 2.5%;
 }
 @media (min-width: 992px) {
-  body #privacy #privacyContainer section h3 {
+  #privacy #privacyContainer section h3 {
     margin-bottom: 2.5vh;
   }
 }
-body #footer {
+
+#footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -668,17 +668,17 @@ body #footer {
   width: 100%;
 }
 @media (min-width: 992px) {
-  body #footer {
+  #footer {
     padding-left: 15%;
     padding-right: 15%;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-body #footer p {
+#footer p {
   line-height: normal;
 }
-body #footer #footer_right {
+#footer #footer_right {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -686,9 +686,20 @@ body #footer #footer_right {
   width: 80%;
 }
 @media (min-width: 992px) {
-  body #footer #footer_right {
+  #footer #footer_right {
     justify-content: space-between;
     width: 30%;
+  }
+}
+#footer #footer_right a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+@media (min-width: 992px) {
+  #footer #footer_right a {
+    line-height: 1.7em;
+    font-size: 1.2em;
   }
 }
 
