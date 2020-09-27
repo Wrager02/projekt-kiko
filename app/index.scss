@@ -127,6 +127,57 @@ body {
     -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
     box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
 
+    #hamburgerContainer {
+      color:red;
+      height: 4em;
+      width: 4em;
+      position: relative;
+      cursor: pointer;
+
+      #hamburger,
+      #hamburger:before,
+      #hamburger:after {
+        content: '';
+        position: absolute;
+        height: 0.5em;
+        width: 4em;
+        background: $dark;
+        transition: all .25s ease;
+        border-radius: 0.2em;
+      }
+
+      #hamburger {
+        top: 1.8em;
+      }
+
+      #hamburger:before {
+        top: -1em
+      }
+
+      #hamburger:after {
+        top: 1em
+      }
+
+
+      .hamburgerActive#hamburger {
+        background: transparent;
+        transform: rotate(-135deg)
+      }
+
+      .hamburgerActive#hamburger:before,
+      .hamburgerActive#hamburger:after {
+        top: 0
+      }
+
+      .hamburgerActive#hamburger:before {
+        transform: rotate(90deg)
+      }
+
+      @media(min-width: 992px) {
+        display: none;
+      }
+    }
+
     #linkContainer {
       display: none;
 
@@ -156,6 +207,55 @@ body {
   #navigationContainer {
     display: flex;
   }
+}
+
+#sliderBackground {
+  backdrop-filter: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: all 0.25s ease;
+}
+
+#sliderBackground.sliderActive {
+  z-index: 3;
+  backdrop-filter: blur(10px);
+}
+
+#slider {
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  display: flex;
+  position: fixed;
+  width: 80vw;
+  height: 100vh;
+  left: 100vw;
+  z-index: 5;
+  background-color: $white;
+  transition: all 0.25s ease;
+  align-items: center;
+  justify-content: center;
+
+  #sliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+
+    a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 2em;
+    }
+  }
+}
+
+#slider.sliderActive {
+  display: flex;
+  left: 20vw;
 }
 
 #header {
@@ -782,4 +882,8 @@ body {
       }
     }
   }
+}
+
+body.disableScrolling {
+  overflow: hidden;
 }

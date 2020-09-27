@@ -112,6 +112,49 @@ body #navigation {
   -moz-box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
   box-shadow: 5px 5px 40px 0px rgba(44, 47, 51, 0.1);
 }
+body #navigation #hamburgerContainer {
+  color: red;
+  height: 4em;
+  width: 4em;
+  position: relative;
+  cursor: pointer;
+}
+body #navigation #hamburgerContainer #hamburger,
+body #navigation #hamburgerContainer #hamburger:before,
+body #navigation #hamburgerContainer #hamburger:after {
+  content: "";
+  position: absolute;
+  height: 0.5em;
+  width: 4em;
+  background: #2c2f33;
+  transition: all 0.25s ease;
+  border-radius: 0.2em;
+}
+body #navigation #hamburgerContainer #hamburger {
+  top: 1.8em;
+}
+body #navigation #hamburgerContainer #hamburger:before {
+  top: -1em;
+}
+body #navigation #hamburgerContainer #hamburger:after {
+  top: 1em;
+}
+body #navigation #hamburgerContainer .hamburgerActive#hamburger {
+  background: transparent;
+  transform: rotate(-135deg);
+}
+body #navigation #hamburgerContainer .hamburgerActive#hamburger:before,
+body #navigation #hamburgerContainer .hamburgerActive#hamburger:after {
+  top: 0;
+}
+body #navigation #hamburgerContainer .hamburgerActive#hamburger:before {
+  transform: rotate(90deg);
+}
+@media (min-width: 992px) {
+  body #navigation #hamburgerContainer {
+    display: none;
+  }
+}
 body #navigation #linkContainer {
   display: none;
 }
@@ -138,6 +181,53 @@ body .logo {
 }
 body #navigationContainer {
   display: flex;
+}
+
+#sliderBackground {
+  backdrop-filter: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: all 0.25s ease;
+}
+
+#sliderBackground.sliderActive {
+  z-index: 3;
+  backdrop-filter: blur(10px);
+}
+
+#slider {
+  -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+  display: flex;
+  position: fixed;
+  width: 80vw;
+  height: 100vh;
+  left: 100vw;
+  z-index: 5;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+  align-items: center;
+  justify-content: center;
+}
+#slider #sliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+}
+#slider #sliderContainer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+#slider.sliderActive {
+  display: flex;
+  left: 20vw;
 }
 
 #header {
@@ -739,6 +829,10 @@ body #navigationContainer {
     line-height: 1.7em;
     font-size: 1.2em;
   }
+}
+
+body.disableScrolling {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */
