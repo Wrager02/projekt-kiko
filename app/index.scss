@@ -210,7 +210,6 @@ body {
 }
 
 #sliderBackground {
-  backdrop-filter: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -220,7 +219,6 @@ body {
 
 #sliderBackground.sliderActive {
   z-index: 3;
-  backdrop-filter: blur(10px);
 }
 
 #slider {
@@ -254,8 +252,7 @@ body {
 }
 
 #slider.sliderActive {
-  display: flex;
-  left: 20vw;
+  transform: translateX(-80vw);
 }
 
 #header {
@@ -569,6 +566,7 @@ body {
       outline: 0;
       border: none;
       transition: background-color 0.25s ease;
+      webkit-appearance: none;
 
       @media(min-width: 992px) {
         height: 3em;
