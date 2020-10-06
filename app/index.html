@@ -10,21 +10,36 @@
 <div id="navigation">
     <a href="#header" class="logo"><span class="primaryText">KI</span><span class="accentText">KO</span></a>
     <div id="linkContainer">
-        <a href="#idea">Die Idee</a>
-        <a href="#team">Unser Team</a>
-        <a href="#downloads">Downloads</a>
-        <a href="#sponsors">Partner</a>
-        <a href="#contact">Kontakt</a>
+        <a class="darkText" href="#idea">Die Idee</a>
+        <a class="darkText" href="#team">Unser Team</a>
+        <a class="darkText" href="#downloads">Downloads</a>
+        <a class="darkText" href="#sponsors">Partner</a>
+        <a class="darkText" href="#contact">Kontakt</a>
+    </div>
+    <div id="hamburgerContainer">
+        <span id="hamburger"></span>
+    </div>
+</div>
+<div id="sliderBackground"></div>
+<div id="slider">
+    <div id="sliderContainer">
+        <a class="darkText" href="#idea">Die Idee</a>
+        <a class="darkText" href="#team">Unser Team</a>
+        <a class="darkText" href="#downloads">Downloads</a>
+        <a class="darkText" href="#sponsors">Partner</a>
+        <a class="darkText" href="#contact">Kontakt</a>
     </div>
 </div>
 <div id="header">
-    <h1 id="headline"><span class="primaryText">KI</span><span class="accentText">KO</span></h1>
+    <h1><span class="primaryText">KI</span><span class="accentText">KO</span></h1>
 </div>
 <div id="idea">
+    <h2 id="ideaMobileHeader" class="whiteText">Die Idee</h2>
     <div id="ideaTextContainer">
         <h2 id="ideaHeader" class="accentText">Die Idee</h2>
         <p>
-            Als wir ein Thema für unsere Diplomarbeit suchten, waren alle Teammitglieder derselben Meinung:<br>"Wir wollen
+            Als wir ein Thema für unsere Diplomarbeit suchten, waren alle Teammitglieder derselben Meinung:<br>"Wir
+            wollen
             etwas erschaffen, das einen Nutzen für die Menschen hat".<br>Nach einem Ideen-Workshop hatten wir unser
             Projekt: eine Applikation, welche die Kommunikation und Organisation einer Kindergarten-Gruppe vereinfachen
             soll. Mit dem Ziel auch älteren Usern einen logischen und simplen Umgang zu ermöglichen.
@@ -37,36 +52,40 @@
 <div id="team">
     <h2 class="primaryText">Unser Team</h2>
     <div id="teamContainer">
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/matthias.jpg">
-            <div class="personText">
-                <h3>Matthias</h3>
-                <h3>Hirmann</h3>
-                <p>Scrum Master</p>
+        <div class="personContainerRow">
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/hirsie.svg">
+                <div class="personText">
+                    <h4 class="accentText">Matthias</h4>
+                    <h4 class="accentText">Hirmann</h4>
+                    <p>Scrum Master</p>
+                </div>
+            </div>
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/clemens.svg">
+                <div class="personText">
+                    <h4 class="accentText">Clemens</h4>
+                    <h4 class="accentText">Jurkowitsch</h4>
+                    <p>Product Owner</p>
+                </div>
             </div>
         </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/clemens.jpg">
-            <div class="personText">
-                <h3>Clemens</h3>
-                <h3>Jurkowitsch</h3>
-                <p>Product Owner</p>
+        <div class="personContainerRow">
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/jakob.svg">
+                <div class="personText">
+                    <h4 class="accentText">Jakob</h4>
+                    <h4 class="accentText">Fischer</h4>
+                    <p>Entwickler</p>
+                </div>
             </div>
-        </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/jakob.jpg">
-            <div class="personText">
-                <h3>Jakob</h3>
-                <h3>Fischer</h3>
-                <p>Entwickler</p>
-            </div>
-        </div>
-        <div class="personContainer">
-            <img class="personSvg" src="images/team/alex.jpg">
-            <div class="personText">
-                <h3>Alexander</h3>
-                <h3>Reckendorfer</h3>
-                <p>Entwickler</p>
+            <div class="personContainer">
+                <img class="personSvg" src="images/team/alex.svg">
+                <div class="personText">
+                    <h4 class="accentText">Alexander</h4>
+                    <h4 class="accentText">Reckendorfer</h4>
+                    <p>Entwickler</p>
+                </div>
             </div>
         </div>
     </div>
@@ -76,22 +95,23 @@
     <div id="downloadContainer">
         <div id="ansuchen" class="downloadCard">
             <i class="far fa-file-pdf"></i>
-            <a id="ansuchenDownload" href="files/da-ansuchen.pdf" download>DA-Ansuchen</a>
+            <a class="darkText" id="ansuchenDownload" href="files/Ansuchen_KIKO.pdf" download>DA-Ansuchen</a>
         </div>
         <div id="antrag" class="downloadCard">
             <i class="far fa-file-pdf"></i>
-            <a id="antragDownload" href="files/da-antrag.pdf" download>DA-Antrag</a>
+            <a class="darkText" id="antragDownload" href="files/Antrag_KIKO.pdf" download>DA-Antrag</a>
         </div>
         <div id="buch" class="downloadCard">
             <i class="far fa-file-pdf"></i>
-            <a id="buchDownload" href="files/da-buch.pdf" download>DA-Buch</a>
+            <a class="darkText" id="buchDownload" href="" download>In Arbeit</a>
         </div>
     </div>
 </div>
 <div id="sponsors">
     <h2 class="primaryText">Unsere Partner</h2>
     <div id="sponsorContainer">
-        <div class="sponsorSvgContainer"><img class="sponsorSvg" class src="images/easyname_logo_default.svg"></div>
+        <div class="sponsorSvgContainer"><a href="https://easyname.at"><img class="sponsorSvg" class src="images/easyname_logo_default.svg"></a></div>
+        <div class="sponsorSvgContainer"><a href="https://easyname.at"><img class="sponsorSvg" class src="images/easyname_logo_default.svg"></a></div>
     </div>
 </div>
 <div id="contact">
@@ -119,10 +139,11 @@
 <div id="footer">
     <p>© HTL Rennweg KIKO 2020</p>
     <div id="footer_right">
-        <a href="https://www.projekt.kikoapp.at/impressum">Impressum</a>
-        <a href="https://www.projekt.kikoapp.at/datenschutz">Datenschutz</a>
+        <a class="whiteText" href="https://www.projekt.kikoapp.at/impressum">Impressum</a>
+        <a class="whiteText" href="https://www.projekt.kikoapp.at/datenschutz">Datenschutz</a>
     </div>
 </div>
 </body>
 </html>
 <script src="index.js"></script>
+<script src="js/navigation.js"></script>
